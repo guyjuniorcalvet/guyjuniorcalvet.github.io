@@ -3,61 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio de Guy Junior Calvet</title>
+  <title>Guy Junior Calvet — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      box-sizing: border-box;
     }
-    header, footer {
-      background-color: #004080;
-      color: white;
-      text-align: center;
-      padding: 1em 0;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: white;
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+      padding: 40px 20px;
     }
     .container {
-      padding: 20px;
-      max-width: 1000px;
+      max-width: 800px;
       margin: auto;
     }
-    .project {
-      background: white;
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: 500;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      font-size: 1.8rem;
       margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .project {
+      margin-bottom: 30px;
     }
     .project h3 {
-      margin-top: 0;
+      font-size: 1.4rem;
+      color: #004080;
     }
-    footer p {
-      margin: 5px 0;
+    .project p {
+      color: #444;
+      margin: 5px 0 10px;
+    }
+    .project a {
+      color: #0066cc;
+      text-decoration: underline;
+      font-size: 0.95rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Guy Junior Calvet</h1>
-    <p>Étudiant en science des données et intelligence d'affaires</p>
-    <nav>
-      <a href="#apropos">À propos</a>
-      <a href="#projets">Projets</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
   <div class="container">
+    <header>
+      <h1>Guy Junior Calvet</h1>
+      <p>Étudiant en science des données & intelligence d'affaires</p>
+      <nav>
+        <a href="#apropos">À propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
     <section id="apropos">
       <h2>À propos</h2>
-      <p>Je suis étudiant à l'UQAC en science des données et intelligence d'affaires, passionné par l’analyse de données, la modélisation prédictive et les technologies numériques. Je développe des projets académiques orientés machine learning, bases de données et visualisation.</p>
+      <p>Je suis un étudiant passionné de science des données à l'UQAC, avec un intérêt marqué pour la modélisation statistique, le machine learning et l’analyse visuelle. Mon parcours combine des projets académiques variés et une implication constante dans l'amélioration de systèmes informatiques.</p>
     </section>
 
     <section id="projets">
@@ -65,18 +98,18 @@
 
       <div class="project">
         <h3>Analyse des accidents routiers au Québec (2022)</h3>
-        <p>Projet de modélisation et de visualisation statistique avec R, sur les données d'accidents publiées sur Kaggle. Hypothèses testées, modèles multinomiaux et validation croisée.</p>
+        <p>Modélisation statistique avec R sur des données d'accidents, incluant hypothèses, tests, et visualisations.</p>
         <a href="https://github.com/tonlien/projet-accidents" target="_blank">Voir sur GitHub</a>
       </div>
 
       <div class="project">
         <h3>Audit d'utilisabilité du site BonLook</h3>
-        <p>Évaluation de l'expérience utilisateur et recommandations d'améliorations pour le site e-commerce BonLook.ca. Rapport structuré et basé sur des critères heuristiques.</p>
+        <p>Évaluation critique de l’interface utilisateur d’un site e-commerce et recommandations UX.</p>
       </div>
 
       <div class="project">
-        <h3>Projet de transformation numérique - IGA Chicoutimi</h3>
-        <p>Conception d'une stratégie d'usine intelligente pour un supermarché local, avec plan numérique, enjeux de cybersécurité et architecture système.</p>
+        <h3>Transformation numérique - IGA Chicoutimi</h3>
+        <p>Projet académique sur la digitalisation d’un supermarché local avec planification technologique.</p>
       </div>
 
     </section>
@@ -86,11 +119,10 @@
       <p>Email : guyjunior@example.com</p>
       <p>LinkedIn : <a href="https://www.linkedin.com/in/tonprofil" target="_blank">linkedin.com/in/tonprofil</a></p>
     </section>
-  </div>
 
-  <footer>
-    <p>© 2025 Guy Junior Calvet</p>
-    <p>Fait avec ❤️ et HTML/CSS</p>
-  </footer>
+    <footer>
+      <p>© 2025 Guy Junior Calvet — Tous droits réservés</p>
+    </footer>
+  </div>
 </body>
 </html>
